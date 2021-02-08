@@ -12,7 +12,7 @@ import {
 
 // Keep this line for downwards compatibility with RN.
 // eslint-disable-next-line react/forbid-foreign-prop-types
-const ViewPropTypes = RNViewPropTypes || View.propTypes;
+const ViewPropTypes = RNViewPropTypes || View.propTypes || { style: PropTypes.object };
 
 class Autocomplete extends Component {
   static propTypes = {

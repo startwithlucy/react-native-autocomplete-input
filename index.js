@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import {
+const React = require('react')
+
+const Component = React.Component
+
+const PropTypes = require('prop-types')
+
+const {
   FlatList,
   Platform,
   StyleSheet,
   Text,
   TextInput,
   View,
-  ViewPropTypes as RNViewPropTypes
-} from 'react-native';
+  ViewPropTypes: RNViewPropTypes
+} = require('react-native')
 
 // Keep this line for downwards compatibility with RN.
 // eslint-disable-next-line react/forbid-foreign-prop-types
@@ -268,4 +272,4 @@ const styles = StyleSheet.create({
   })
 });
 
-export default Autocomplete;
+module.exports = Autocomplete
